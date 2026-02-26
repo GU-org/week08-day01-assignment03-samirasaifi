@@ -1,5 +1,6 @@
 function bmiCalc(w,h){
-    let bmi
+    let bmi  = w / (h*h);
+
 
     return bmi;
 
@@ -7,5 +8,10 @@ function bmiCalc(w,h){
 
 var weight=prompt("Please enter you weight in kg");
 var height=prompt("Please enter your height in m");
+
+weight = Number(weight);
+height = Number(height);
+
 let bmi=bmiCalc(weight,height);
+
 alert("Your bmi is "+bmi);
